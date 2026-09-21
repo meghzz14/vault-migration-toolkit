@@ -1,0 +1,121 @@
+{
+    "_description": "Field mapping configuration for SharePoint to Veeva Vault QualityDocs migration",
+    "_project": "NovaPharma Inc. - Document Migration",
+    "_version": "1.0",
+
+    "field_mappings": {
+        "source_id": "legacy_doc_number__c",
+        "source_name": "name__v",
+        "title": "title__v",
+        "department": "department__c",
+        "owner_name": "document_owner__c",
+        "classification": "gxp_classification__c",
+        "effective_date": "effective_date__c",
+        "review_period": "review_cycle_months__c",
+        "product": "product__c",
+        "site": "site__c",
+        "confidentiality": "confidentiality__c",
+        "change_control_ref": "change_control_number__c",
+        "training_needed": "training_required__c"
+    },
+
+    "value_mappings": {
+        "department__c": {
+            "QA": "Quality",
+            "Quality Assurance": "Quality",
+            "QC": "Laboratory",
+            "Quality Control": "Laboratory",
+            "Mfg": "Manufacturing",
+            "Production": "Manufacturing",
+            "RA": "Regulatory Affairs",
+            "Reg Affairs": "Regulatory Affairs",
+            "Research": "R&D",
+            "R and D": "R&D",
+            "SC": "Supply Chain",
+            "EH&S": "EHS",
+            "Environmental Health Safety": "EHS",
+            "Information Technology": "IT"
+        },
+        "gxp_classification__c": {
+            "GxP": "GxP",
+            "GMP": "GxP",
+            "GLP": "GxP",
+            "Non-GxP": "Non-GxP",
+            "non-gxp": "Non-GxP",
+            "Reference": "Reference",
+            "Ref": "Reference"
+        },
+        "site__c": {
+            "HQ": "NovaPharma HQ - Boston",
+            "Boston": "NovaPharma HQ - Boston",
+            "NJ Plant": "Manufacturing Plant - NJ",
+            "New Jersey": "Manufacturing Plant - NJ",
+            "CA Lab": "R&D Center - CA",
+            "California": "R&D Center - CA",
+            "NJ Lab": "QC Lab - NJ",
+            "QC Lab": "QC Lab - NJ"
+        },
+        "training_required__c": {
+            "Yes": "Yes",
+            "Y": "Yes",
+            "TRUE": "Yes",
+            "No": "No",
+            "N": "No",
+            "FALSE": "No"
+        }
+    },
+
+    "default_values": {
+        "gxp_classification__c": "GxP",
+        "confidentiality__c": "Internal",
+        "review_cycle_months__c": "24",
+        "training_required__c": "Yes"
+    },
+
+    "doc_type_mapping": {
+        "SOP": {
+            "type__v": "sop__c",
+            "subtypes": {
+                "Quality": "quality_sop__c",
+                "Manufacturing": "manufacturing_sop__c",
+                "Laboratory": "laboratory_sop__c"
+            }
+        },
+        "WI": {
+            "type__v": "work_instruction__c",
+            "subtypes": {
+                "Production": "production_wi__c",
+                "Laboratory": "lab_wi__c"
+            }
+        },
+        "Policy": {
+            "type__v": "policy__c",
+            "subtypes": {
+                "Quality": "quality_policy__c",
+                "EHS": "ehs_policy__c"
+            }
+        },
+        "Form": {
+            "type__v": "form__c",
+            "subtypes": {
+                "Batch Record": "batch_record_form__c",
+                "Deviation": "deviation_form__c",
+                "Change Control": "change_control_form__c"
+            }
+        },
+        "Specification": {
+            "type__v": "specification__c",
+            "subtypes": {
+                "Raw Material": "raw_material_spec__c",
+                "Finished Product": "finished_product_spec__c"
+            }
+        },
+        "Report": {
+            "type__v": "report__c",
+            "subtypes": {
+                "Validation": "validation_report__c",
+                "Annual Product Review": "apr_report__c"
+            }
+        }
+    }
+}

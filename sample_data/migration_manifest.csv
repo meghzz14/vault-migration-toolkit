@@ -1,0 +1,16 @@
+source_id,source_path,source_name,doc_type,doc_subtype,department,owner_name,classification,effective_date,review_period,product,site,confidentiality,training_needed,change_control_ref
+SP-SOP-001,sops/SOP-QA-0001.pdf,Deviation Handling Procedure,sop__c,quality_sop__c,QA,Jane Smith,GxP,2024-06-15,24,General,HQ,Internal,Yes,CC-2024-001
+SP-SOP-002,sops/SOP-QA-0002.pdf,Change Control Management,sop__c,quality_sop__c,Quality Assurance,Jane Smith,GxP,2024-03-01,24,General,HQ,Internal,Yes,CC-2023-045
+SP-SOP-003,sops/SOP-MFG-0001.pdf,Tablet Compression Operations,sop__c,manufacturing_sop__c,Production,Mike Johnson,GMP,2024-08-20,24,Product A (Tablet),NJ Plant,Internal,Yes,CC-2024-012
+SP-SOP-004,sops/SOP-MFG-0002.pdf,Equipment Cleaning Procedure,sop__c,manufacturing_sop__c,Mfg,Mike Johnson,GxP,2024-01-10,24,General,NJ Plant,Internal,Yes,CC-2023-089
+SP-SOP-005,sops/SOP-LAB-0001.pdf,HPLC Method for Assay Testing,sop__c,laboratory_sop__c,QC,Lisa Chen,GLP,2024-07-01,24,Product A (Tablet),NJ Lab,Internal,Yes,CC-2024-015
+SP-WI-001,work_instructions/WI-PRD-0001.pdf,Granulation Process Work Instruction,work_instruction__c,production_wi__c,Production,Mike Johnson,GxP,2024-09-01,24,Product A (Tablet),NJ Plant,Internal,Yes,CC-2024-020
+SP-WI-002,work_instructions/WI-LAB-0001.pdf,Sample Preparation for Dissolution Testing,work_instruction__c,lab_wi__c,Quality Control,Lisa Chen,GxP,2024-05-15,24,Product A (Tablet),NJ Lab,Internal,Yes,CC-2024-008
+SP-POL-001,policies/POL-QA-0001.pdf,Quality Management System Policy,policy__c,quality_policy__c,QA,Sarah Director,GxP,2023-01-15,12,General,HQ,Internal,Yes,CC-2022-050
+SP-POL-002,policies/POL-EHS-0001.pdf,Environmental Health and Safety Policy,policy__c,ehs_policy__c,EH&S,Tom Safety,Non-GxP,2024-02-01,12,General,NJ Plant,Internal,Yes,CC-2023-072
+SP-FRM-001,forms/FRM-BR-0001.pdf,Batch Record - Product A Tablets,form__c,batch_record_form__c,Production,Mike Johnson,GxP,2024-04-01,24,Product A (Tablet),NJ Plant,Confidential,Yes,CC-2024-003
+SP-FRM-002,forms/FRM-DEV-0001.pdf,Deviation Report Form,form__c,deviation_form__c,QA,Jane Smith,GxP,2024-06-01,24,General,HQ,Internal,Yes,CC-2024-001
+SP-SPEC-001,specifications/SPEC-RM-0001.pdf,Raw Material Specification - Excipient A,specification__c,raw_material_spec__c,QC,Lisa Chen,GxP,2024-03-15,24,Product A (Tablet),NJ Lab,Confidential,Yes,CC-2024-005
+SP-SPEC-002,specifications/SPEC-FP-0001.pdf,Finished Product Specification - Product A Tablets,specification__c,finished_product_spec__c,Quality Control,Lisa Chen,GxP,2024-07-20,24,Product A (Tablet),NJ Lab,Confidential,Yes,CC-2024-018
+SP-RPT-001,reports/RPT-VAL-0001.pdf,Cleaning Validation Report - Line 1,report__c,validation_report__c,QA,Jane Smith,GxP,2024-08-01,24,General,NJ Plant,Confidential,Yes,CC-2024-022
+SP-RPT-002,reports/RPT-APR-0001.pdf,Annual Product Review - Product A 2023,report__c,apr_report__c,QA,Sarah Director,GxP,2024-02-28,12,Product A (Tablet),HQ,Confidential,Yes,CC-2024-002

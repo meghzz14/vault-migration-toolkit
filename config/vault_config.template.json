@@ -1,0 +1,7 @@
+{
+    "_instructions": "Copy this file to vault_config.json and fill in your credentials. vault_config.json is in .gitignore and will NOT be committed.",
+    "vault_url": "https://your-vault-instance.veevavault.com",
+    "api_version": "v24.1",
+    "username": "your.email@company.com",
+    "password": "your-password-here"
+}
